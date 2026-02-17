@@ -32,13 +32,20 @@ body {
   border: none;
   border-radius: 30px;
   padding: 16px;
+  
 }
 
     /* header style start*/
     .navbar{
+      display: flex;
+      justify-content: space-around;
       background-color: #1A0B2E;
       padding: 10px;
       align-items: center;
+    }
+    .flex-image{
+      visibility: collapse;
+
     }
     nav ul {
       list-style: none;
@@ -54,6 +61,7 @@ body {
     }
     .navbar h1{
       color: #FFFFFF;
+      
     }
     .navbar span{
       
@@ -372,6 +380,9 @@ body {
     max-width: 100%;
    
 }
+header{
+  width: 100%;
+}
       .flex-item, .about-card, .featured, .hostbar{
         flex-direction: column;
         align-items: center;
@@ -382,9 +393,23 @@ body {
         text-align: center;
         
       }
-      .banner {
-        
-    /* background: url(./assets/hero-bg.png) center no-repeat ; */
+      .flex-item, .btn{
+    display: none;
+    width: 100%;
+   
+  }
+  .flex-image{
+      /* display: none; */
+      visibility: visible;
+    }
+      
+      
+      
+  
+
+  
+    .banner {  
+    background: url(./assets/hero-bg.png) center no-repeat ;
     background-size: cover;
     background-position: center;
     width:100%;
